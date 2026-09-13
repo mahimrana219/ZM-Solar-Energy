@@ -110,6 +110,15 @@ export default function Navbar() {
           <Link onClick={closeMenu} to="/pages/projects" className="text-2xl font-black tracking-tight text-white hover:text-solarRed transition-colors">
             Projects
           </Link>
+           <Link onClick={closeMenu} to="/pages/whyus" className="text-2xl font-black tracking-tight text-white hover:text-solarRed transition-colors">
+            WhyUs
+          </Link>
+          <Link onClick={closeMenu} to="/pages/leadership" className="text-2xl font-black tracking-tight text-white hover:text-solarRed transition-colors">
+            Founder/CEO
+          </Link>
+            <Link onClick={closeMenu} to="/pages/detailedreviews" className="text-2xl font-black tracking-tight text-white hover:text-solarRed transition-colors">
+            Reviews
+          </Link>
         </div>
 
         {/* Mobile CTA Footer */}
