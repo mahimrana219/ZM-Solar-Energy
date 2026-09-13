@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --color-solarRed: #e60000;
+  --color-solarBlue: #0066cc;
+  --color-solarYellow: #ffcc00;
+  --color-solarGreen: #22b14c;
+}
+
+/* Horizontal scrolling rokne ke liye */
+html, body {
+  font-family: var(--font-poppins);
+  background-color: #ffffff; /* Bright white theme */
+  color: #1e293b;            /* Dark slate text for readability */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
