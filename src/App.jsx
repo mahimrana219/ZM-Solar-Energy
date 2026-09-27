@@ -11,18 +11,20 @@ import Footer from './Components/Footer'
 import Contact from './Pages/Contact'
 import About from './Pages/About'
 import ServicesPage from './Pages/Services'
-import ProjectsPage from './Pages/Projects'
+// import ProjectsPage from './Pages/Projects'
 import Projects from './Pages/Projects'
 import WhyUs from './Pages/WhyUs'
 import Reviews from './Components/Reviews'
 import DetailedReviews from './Pages/DetailedReviews'
 import BookSurvey from './Pages/BookSurvey'
 import Leadership from './Pages/Leadership'
+import Blurtext from './Components/BlurText'
 
 function Home() {
   return (
     <>
       <HeroSection />
+      <Blurtext />
       <AboutUs />
       <WhyChooseUs />
       <Services />

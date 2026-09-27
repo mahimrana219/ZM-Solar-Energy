@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { IconShieldCheck, IconMapPin, IconUsers, IconAward, IconCheck } from '@tabler/icons-react';
-import aboutImage from '../assets/aboutus.png';
+import aboutImage from '../assets/hero1.jpeg';
 import Reveal from './Reveal';
 
 export default function AboutUs() {
