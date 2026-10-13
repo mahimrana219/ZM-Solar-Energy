@@ -40,7 +40,7 @@ export default function WhyUs() {
     },
     {
       title: "Solid Warranties & Legacy",
-      description: "Backed by the trusted market legacy of Faisal Electronics in Hyderabad, offering up to 25 years of performance guarantees.",
+      description: "Backed by our proven track record in Hyderabad, offering up to 25 years of performance guarantees.",
       icon: <IconShieldCheck className="w-6 h-6 text-solarRed group-hover:text-white transition-colors duration-300" />
     }
   ];

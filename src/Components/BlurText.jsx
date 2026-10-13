@@ -5,7 +5,7 @@ import { useReveal } from '../hooks/useReveal';
 import Reveal from './Reveal';
 
 const PARAGRAPH =
-  "We are ZM Solar Energy. We are based in Hyderabad but deliver quality all over Pakistan. We have 2 branches: first is our mother branch Faisal Electronics, and the second is ZM Solar Energy.";
+  "We are ZM Solar Energy. We are based in Hyderabad but deliver quality all over Pakistan, bringing reliable and affordable solar energy solutions to homes and businesses nationwide.";
 
 export default function BlurText() {
   const [ref, isVisible] = useReveal({ threshold: 0.3 });

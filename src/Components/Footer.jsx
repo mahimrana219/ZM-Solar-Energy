@@ -27,7 +27,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-white font-bold text-sm leading-relaxed">
-              Pioneering reliable clean power across Pakistan. Rooted in Hyderabad and backed by Faisal Electronics, delivering over 500+ successful installations.
+              Pioneering reliable clean power across Pakistan. Rooted in Hyderabad, delivering over 500+ successful installations nationwide.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a

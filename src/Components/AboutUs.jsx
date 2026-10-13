@@ -23,7 +23,7 @@ export default function AboutUs() {
             Reliable Solar Power, Built <span className="text-solarRed">on Years of Trust</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
-            Rooted in Hyderabad and proudly powered by our main branch <strong>Faisal Electronics</strong>, we are bringing a revolution to Pakistan's solar industry.
+            Rooted in Hyderabad, we are bringing a revolution to Pakistan's solar industry with honest pricing and dependable installations.
           </p>
         </Reveal>
 
@@ -36,7 +36,7 @@ export default function AboutUs() {
               Solving Industry Gaps with Expert Engineering & 500+ Successful Installations
             </h3>
             <p className="text-slate-600 leading-relaxed">
-              ZM Solar Energy was founded with a clear vision to eliminate the common flaws found in local solar installations—such as poor service, inadequate maintenance, and hidden charges. Backed by the rich legacy and experience of our primary branch, <strong className="text-slate-900">Faisal Electronics</strong>, we have successfully installed <strong className="text-slate-900">over 500 solar systems</strong> across Pakistan.
+              ZM Solar Energy was founded with a clear vision to eliminate the common flaws found in local solar installations—such as poor service, inadequate maintenance, and hidden charges. Backed by years of hands-on technical expertise, we have successfully installed <strong className="text-slate-900">over 500 solar systems</strong> across Pakistan.
             </p>
             <p className="text-slate-600 leading-relaxed">
               While we are headquartered in Hyderabad, our expert deployment and installation teams operate nationwide. Additionally, we serve as <strong className="text-slate-900">authorized distributors for Royal products</strong>, reflecting our uncompromising standards for quality and authenticity.
@@ -83,10 +83,10 @@ export default function AboutUs() {
                 <div className="w-8 h-8 rounded-xl bg-solarRed/10 text-solarRed flex items-center justify-center">
                   <IconCheck className="w-5 h-5" />
                 </div>
-                <h4 className="text-lg font-bold text-slate-900">Backed by Faisal Electronics</h4>
+                <h4 className="text-lg font-bold text-slate-900">Certified & Trusted</h4>
               </div>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Our parent brand Faisal Electronics brings decades of market credibility, ensuring you get 100% original equipment, transparent dealings, and lifelong after-sales maintenance support.
+                Years of hands-on market credibility, ensuring you get 100% original equipment, transparent dealings, and lifelong after-sales maintenance support.
               </p>
             </div>
 

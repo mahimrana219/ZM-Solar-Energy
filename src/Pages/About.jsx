@@ -47,7 +47,7 @@ export default function About() {
           Powering Pakistan’s Future with <span className="text-solarRed">ZM Solar</span>
         </h1>
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-          Rooted deeply in Hyderabad and backed by the trusted legacy of Faisal Electronics, we are committed to delivering clean, independent, and cost-effective energy solutions nationwide.
+          Rooted deeply in Hyderabad, we are committed to delivering clean, independent, and cost-effective energy solutions nationwide.
         </p>
       </div>
 
@@ -62,7 +62,7 @@ export default function About() {
             ZM Solar Energy was founded with a clear mission: to combat rising electricity tariffs by making solar energy accessible, efficient, and reliable for residential, commercial, and industrial clients. 
           </p>
           <p className="text-slate-600 text-base leading-relaxed">
-            Drawing strength from our association with <strong className="text-slate-900">Faisal Electronics</strong>, we bring decades of market experience, technical expertise, and absolute reliability to every project we undertake. With over 500+ successful installations, our track record speaks for itself.
+            Drawing on years of hands-on field experience, we bring deep market expertise, technical know-how, and absolute reliability to every project we undertake. With over 500+ successful installations, our track record speaks for itself.
           </p>
 
           <div className="space-y-3 pt-2">

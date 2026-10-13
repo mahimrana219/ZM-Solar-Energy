@@ -40,30 +40,23 @@ export default function Projects() {
   const [selectedImage, setSelectedImage] = useState(null); // Lightbox State
 
   const projectsData = [
-    { id: 1, title: "15kW Residential Solar System", category: "Residential", location: "Hyderabad", capacity: "15 kW", img: projectImages[1] },
-    { id: 2, title: "Commercial Plaza Grid-Tie Setup", category: "Commercial", location: "Karachi", capacity: "50 kW", img: projectImages[2] },
-    { id: 3, title: "Hybrid Villa Solar Integration", category: "Residential", location: "Hyderabad", capacity: "20 kW", img: projectImages[3] },
-    { id: 4, title: "Industrial Warehouse Rooftop", category: "Industrial", location: "Kotri SITE", capacity: "150 kW", img: projectImages[4] },
-    { id: 5, title: "Modern Home Solar & Batteries", category: "Residential", location: "Hyderabad", capacity: "10 kW", img: projectImages[5] },
-    { id: 6, title: "Corporate Office Backup System", category: "Commercial", location: "Hyderabad", capacity: "30 kW", img: projectImages[6] },
-    { id: 7, title: "Elite Bungalow On-Grid Project", category: "Residential", location: "Jamshoro", capacity: "25 kW", img: projectImages[7] },
-    { id: 8, title: "Manufacturing Unit Power Plant", category: "Industrial", location: "Nooriabad", capacity: "200 kW", img: projectImages[8] },
-    { id: 9, title: "Dual Inverter Hybrid Setup", category: "Residential", location: "Hyderabad", capacity: "12 kW", img: projectImages[9] },
-    { id: 10, title: "Retail Store Solar Optimization", category: "Commercial", location: "Hyderabad", capacity: "40 kW", img: projectImages[10] },
-    { id: 11, title: "Farmhouse Autonomous System", category: "Residential", location: "Super Highway", capacity: "30 kW", img: projectImages[11] },
-    { id: 12, title: "Commercial Deployment", category: "Industrial", location: "Hyderabad", capacity: "300 kW", img: projectImages[12] },
-    { id: 13, title: "Smart Metering Home Project", category: "Residential", location: "Hyderabad", capacity: "10 kW", img: projectImages[13] },
-    { id: 14, title: "Shopping Mall Solar Rooftop", category: "Commercial", location: "Hyderabad", capacity: "100 kW", img: projectImages[14] },
-    { id: 15, title: "Luxury Apartment Complex Grid", category: "Commercial", location: "Karachi", capacity: "80 kW", img: projectImages[15] },
-    { id: 16, title: "High-Efficiency Panel Array", category: "Residential", location: "Hyderabad", capacity: "15 kW", img: projectImages[16] },
-    { id: 17, title: "Cold Storage Solar Solution", category: "Industrial", location: "Hyderabad", capacity: "120 kW", img: projectImages[17] },
-    { id: 18, title: "Suburban Villa Energy Unit", category: "Residential", location: "Hyderabad", capacity: "18 kW", img: projectImages[18] },
-    { id: 19, title: "Educational Institute Rooftop", category: "Commercial", location: "Hyderabad", capacity: "60 kW", img: projectImages[19] },
-    { id: 20, title: "Industrial Assembly Plant", category: "Industrial", location: "Kotri", capacity: "250 kW", img: projectImages[20] },
-    { id: 21, title: "Independent Residential Unit", category: "Residential", location: "Hyderabad", capacity: "10 kW", img: projectImages[21] },
-    { id: 22, title: "Showroom & Service Bay Setup", category: "Commercial", location: "Hyderabad", capacity: "35 kW", img: projectImages[22] },
-    { id: 23, title: "Educational Institute Rooftop", category: "Residential", location: "Hyderabad", capacity: "15 kW", img: projectImages[23] },
-    { id: 24, title: "Home Rooftop", category: "Residential", location: "Hyderabad", capacity: "10 kW", img: projectImages[24] },
+    { id: 1, title: "8kW Residential Hybrid Solar System", category: "Residential", location: "Hyderabad", capacity: "8 kW", img: projectImages[1] },
+    { id: 3, title: "20kW Three-Phase Hybrid Solar System", category: "Commercial", location: "Hyderabad", capacity: "20 kW", img: projectImages[3] },
+    { id: 6, title: "20kW Three-Phase Commercial Hybrid Setup", category: "Commercial", location: "Hyderabad", capacity: "20 kW", img: projectImages[6] },
+    { id: 7, title: "Premium Jinko Panels & Lithium Battery Stock", category: "Commercial", location: "Hyderabad", capacity: "In Stock", img: projectImages[7] },
+    { id: 8, title: "6.6kW Residential Hybrid Solar System", category: "Residential", location: "Hyderabad", capacity: "6.6 kW", img: projectImages[8] },
+    { id: 9, title: "20kW Three-Phase Hybrid Solar System", category: "Commercial", location: "Hyderabad", capacity: "20 kW", img: projectImages[9] },
+    { id: 10, title: "12kW Residential Hybrid Solar System", category: "Residential", location: "Hyderabad", capacity: "12 kW", img: projectImages[10] },
+    { id: 11, title: "10kW Off-Grid Solar Inverter Setup", category: "Residential", location: "Hyderabad", capacity: "10 kW", img: projectImages[11] },
+    { id: 12, title: "Royal Solar Energy Launch Event", category: "Commercial", location: "Hyderabad", capacity: "Event Showcase", img: projectImages[12] },
+    { id: 13, title: "8.6kW Hybrid Inverter & Panel Stock", category: "Commercial", location: "Hyderabad", capacity: "In Stock", img: projectImages[13] },
+    { id: 14, title: "Multi-Brand Inverter Showroom Display", category: "Commercial", location: "Hyderabad", capacity: "Various", img: projectImages[14] },
+    { id: 15, title: "Jinko Solar Panel Exhibition Stand", category: "Commercial", location: "Hyderabad", capacity: "Display Stock", img: projectImages[15] },
+    { id: 16, title: "20kW Rooftop Solar Array Installation", category: "Commercial", location: "Hyderabad", capacity: "20 kW", img: projectImages[16] },
+    { id: 17, title: "6kW Residential System – 12 Jinko Panels", category: "Residential", location: "Qasimabad, Hyderabad", capacity: "6 kW", img: projectImages[17] },
+    { id: 21, title: "6kW Residential Hybrid Solar System", category: "Residential", location: "Hyderabad", capacity: "6 kW", img: projectImages[21] },
+    { id: 23, title: "Dual 10kW Hybrid Inverter Setup", category: "Commercial", location: "Hyderabad", capacity: "20 kW", img: projectImages[23] },
+    { id: 24, title: "7kW Off-Grid Solar Inverter System", category: "Residential", location: "Hyderabad", capacity: "7 kW", img: projectImages[24] },
   ];
 
   const filteredProjects = activeFilter === 'All' 
@@ -83,13 +76,13 @@ export default function Projects() {
           Explore Our <span className="text-solarRed">Completed Projects</span>
         </h1>
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-          Take a look at over 24+ successfully executed residential, commercial, and industrial solar installations powering businesses and homes across Pakistan.
+          Take a look at our successfully executed residential and commercial solar installations powering businesses and homes across Pakistan.
         </p>
       </div>
 
       {/* Filter Tabs */}
       <div className="max-w-6xl mx-auto px-4 mb-12 flex flex-wrap items-center justify-center gap-3">
-        {['All', 'Residential', 'Commercial', 'Industrial'].map((filter) => (
+        {['All', 'Residential', 'Commercial'].map((filter) => (
           <button
             key={filter}
             onClick={() => setActiveFilter(filter)}

@@ -19,18 +19,36 @@ import DetailedReviews from './Pages/DetailedReviews'
 import BookSurvey from './Pages/BookSurvey'
 import Leadership from './Pages/Leadership'
 import Blurtext from './Components/BlurText'
+import FloatingWhatsApp from './Components/FloatingWhatsApp'
+import ProductShowcase from './Components/ProductShowcase'
+import SolarCalculator from './Components/SolarCalculator'
+import BuiltBetter from './Components/BuiltBetter'
+import ProjectsShowcase from './Components/ProjectsShowcase'
+import StatsBar from './Components/StatsBar'
+import TrustedBrands from './Components/TrustedBrands'
+import FAQSection from './Components/FAQSection'
+import CTABanner from './Components/CTABanner'
+import ProductDetail from './Pages/Products/ProductDetail'
 
 function Home() {
   return (
     <>
       <HeroSection />
       <Blurtext />
+      <ProductShowcase />
+      <SolarCalculator />
+      <BuiltBetter />
       <AboutUs />
       <WhyChooseUs />
       <Services />
       <HowItWorks />
+      <ProjectsShowcase />
+      <StatsBar />
       <Reviews />
+      <TrustedBrands />
+      <FAQSection />
       <ContactUs />
+      <CTABanner />
     </>
   )
 }
@@ -49,8 +67,10 @@ function App() {
        <Route path="/pages/detailedreviews" element={<DetailedReviews />} />
         <Route path="/pages/booksurvey" element={<BookSurvey />} />
           <Route path="/pages/leadership" element={<Leadership />} />
+        <Route path="/pages/products/:slug" element={<ProductDetail />} />
       </Routes>
       <Footer />
+      <FloatingWhatsApp />
     </BrowserRouter>
   )
 }
