@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { IconMapPin, IconArrowRight, IconX } from '@tabler/icons-react';
 
 // Importing pro1.jpeg to pro24.jpeg from assets folder using ES modules
@@ -213,13 +214,13 @@ export default function Projects() {
           </div>
 
           <div className="relative z-10 flex-shrink-0">
-            <a 
-              href="#contact"
+            <Link
+              to="/pages/booksurvey"
               className="bg-solarRed hover:bg-solarRedDark text-white font-bold py-4 px-8 rounded-xl shadow-lg shadow-solarRed/30 transition-all inline-flex items-center gap-2 group"
             >
               <span>Book Your Installation</span>
               <IconArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

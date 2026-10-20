@@ -110,7 +110,7 @@ export default function Contact() {
             <div className="space-y-4 pt-2">
               {/* WhatsApp Support */}
               <a 
-                href="https://wa.me/923000000000" 
+                href="https://wa.me/message/OUKLMJYTMAZUM1"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 hover:border-green-500/50 transition-all group shadow-sm"

@@ -2,33 +2,59 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IconCheck, IconArrowRight } from '@tabler/icons-react';
 import Reveal from './Reveal';
-import { getProductsByCategory } from '../data/products';
+
+import solarImg from '../assets/solarpannerl.webp';
+import hybridImg from '../assets/ZM Solar Energy at Sunset.png';
+import onGridImg from '../assets/ZM Energy Units at Sunset.png';
+import batteryImg from '../assets/ZM Solar Energy Systems at Sunset.png';
+import hybridVideo from '../assets/HYBRID-INVERTERS.mp4';
+import batteryVideo from '../assets/lithium-ion-battery.mp4';
 
 const SHOWCASE = [
   {
+    key: 'solar',
     category: 'Solar Panels',
     title: 'Tier-1 Solar Panels',
     desc: 'Industry-leading solar modules from globally trusted manufacturers, engineered for maximum efficiency, long-term reliability, and exceptional performance.',
     features: ['Premium Build Quality', 'Tier-1 Certified', 'High Energy Efficiency'],
+    image: solarImg,
+    exploreTo: '/pages/products/solar-panel',
   },
   {
-    category: 'On Grid Solar Inverters',
+    key: 'hybrid',
+    category: 'Hybrid',
+    title: 'Hybrid Solar Inverters',
+    desc: 'Advanced hybrid inverter technology designed for seamless solar generation, battery backup, and intelligent energy management.',
+    features: ['Battery Ready', 'IP66 Protection', 'AI Energy Management'],
+    image: hybridImg,
+    imgClass: 'scale-110',
+    video: hybridVideo,
+    exploreTo: '/pages/products/category/hybrid',
+  },
+  {
+    key: 'ongrid',
+    category: 'On Grid',
     title: 'On Grid Solar Inverters',
-    desc: 'Dependable grid-tie inverters built for seamless solar power generation, with weatherproof housing and smart monitoring for complete peace of mind.',
-    features: ['IP66 Weatherproof', 'Smart App Monitoring', 'Up to 125KW Capacity'],
+    desc: 'High-efficiency on-grid inverters built for residential and commercial installations, with reliable grid synchronization.',
+    features: ['98%+ Efficiency', 'Smart Monitoring', '5 Year Warranty'],
+    image: onGridImg,
+    exploreTo: '/pages/products/fusion-ip66-12-15-20kw',
   },
   {
-    category: 'Batteries',
-    title: 'Lithium-Ion Batteries',
-    desc: 'High-capacity lithium battery banks designed for reliable backup power, intelligent battery management, and years of consistent daily performance.',
-    features: ['Lithium-Ion (LiFePO4)', 'Intelligent BMS Protection', 'Scalable Capacity'],
+    key: 'battery',
+    category: 'Lithium Batteries',
+    title: 'Energy Storage Systems',
+    desc: 'Reliable lithium battery solutions engineered for long service life, high safety, and dependable backup power.',
+    features: ['LiFePO₄ Cells', 'Long Cycle Life', 'Fast Charging'],
+    image: batteryImg,
+    video: batteryVideo,
+    exploreTo: '/pages/products/energy-wall-r5',
   },
 ];
 
 export default function ProductHero() {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = SHOWCASE[activeIndex];
-  const firstProduct = getProductsByCategory(active.category)[0];
 
   return (
     <Reveal direction="up" className="mb-16">
@@ -36,7 +62,7 @@ export default function ProductHero() {
       <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
         {SHOWCASE.map((item, index) => (
           <button
-            key={item.category}
+            key={item.key}
             onClick={() => setActiveIndex(index)}
             className={`px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all shadow-sm ${
               activeIndex === index
@@ -70,49 +96,53 @@ export default function ProductHero() {
               ))}
             </div>
 
-            {firstProduct && (
-              <Link
-                to={`/pages/products/${firstProduct.slug}`}
-                className="inline-flex items-center gap-2 text-sm font-bold text-solarRed group"
-              >
-                <span>Explore Products</span>
-                <IconArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-              </Link>
-            )}
+            <Link
+              to={active.exploreTo}
+              className="inline-flex items-center gap-2 text-sm font-bold text-solarRed group"
+            >
+              <span>Explore Products</span>
+              <IconArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
 
-          {firstProduct && (
-            <div className="bg-slate-50 rounded-2xl p-8 flex items-center justify-center">
-              <img
-                src={firstProduct.img}
-                alt={active.title}
-                className="w-full h-auto max-h-[320px] object-contain"
+          <div className="overflow-hidden h-[320px] relative">
+            {active.video ? (
+              <video
+                key={active.key}
+                src={active.video}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className={`w-full h-full object-cover transition-transform duration-500 ${active.imgClass || ''}`}
               />
-            </div>
-          )}
+            ) : (
+              <img
+                src={active.image}
+                alt={active.title}
+                className={`w-full h-full object-cover transition-transform duration-500 ${active.imgClass || ''}`}
+              />
+            )}
+          </div>
         </div>
       </div>
 
       {/* Thumbnail Selector */}
       <div className="flex items-center justify-center gap-4 mt-6">
-        {SHOWCASE.map((item, index) => {
-          const thumbProduct = getProductsByCategory(item.category)[0];
-          if (!thumbProduct) return null;
-          return (
-            <button
-              key={item.category}
-              onClick={() => setActiveIndex(index)}
-              className={`bg-white rounded-xl p-3 border-2 transition-all ${
-                activeIndex === index ? 'border-solarRed shadow-md' : 'border-slate-200 hover:border-slate-300'
-              }`}
-            >
-              <img src={thumbProduct.img} alt={item.category} className="w-14 h-14 object-contain mx-auto" />
-              <span className="block text-[10px] font-bold text-slate-600 mt-1.5 text-center uppercase tracking-wide">
-                {item.category === 'On Grid Solar Inverters' ? 'On Grid' : item.category}
-              </span>
-            </button>
-          );
-        })}
+        {SHOWCASE.map((item, index) => (
+          <button
+            key={item.key}
+            onClick={() => setActiveIndex(index)}
+            className={`bg-white rounded-xl p-1.5 border-2 overflow-hidden transition-all ${
+              activeIndex === index ? 'border-solarRed shadow-md' : 'border-slate-200 hover:border-slate-300'
+            }`}
+          >
+            <img src={item.image} alt={item.category} className="w-16 h-14 object-cover rounded-lg mx-auto" />
+            <span className="block text-[10px] font-bold text-slate-600 mt-1 text-center uppercase tracking-wide">
+              {item.category}
+            </span>
+          </button>
+        ))}
       </div>
     </Reveal>
   );

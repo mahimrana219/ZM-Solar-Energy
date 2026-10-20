@@ -7,8 +7,8 @@ export default function CTABanner() {
   return (
     <section className="px-4 py-4">
       <Reveal direction="up" className="max-w-6xl mx-auto">
-        <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-solarRed text-white p-8 sm:p-12 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[200px] bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-[#020618] text-white p-8 sm:p-12 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[200px] bg-solarRed/10 rounded-full blur-3xl pointer-events-none"></div>
 
           <div className="relative z-10 max-w-xl text-center md:text-left">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-white">

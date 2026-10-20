@@ -29,6 +29,9 @@ import TrustedBrands from './Components/TrustedBrands'
 import FAQSection from './Components/FAQSection'
 import CTABanner from './Components/CTABanner'
 import ProductDetail from './Pages/Products/ProductDetail'
+import CategoryPage from './Pages/Products/CategoryPage'
+import ScrollToTop from './Components/ScrollToTop'
+import PageTransition from './Components/PageTransition'
 
 function Home() {
   return (
@@ -56,19 +59,23 @@ function Home() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/pages/contact" element={<Contact />} />
-         <Route path="/pages/about" element={<About />} />
+      <PageTransition>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/pages/contact" element={<Contact />} />
+          <Route path="/pages/about" element={<About />} />
           <Route path="/pages/services" element={<ServicesPage />} />
-     <Route path="/pages/projects" element={<Projects />} />
-     <Route path="/pages/whyus" element={<WhyUs />} />
-       <Route path="/pages/detailedreviews" element={<DetailedReviews />} />
-        <Route path="/pages/booksurvey" element={<BookSurvey />} />
+          <Route path="/pages/projects" element={<Projects />} />
+          <Route path="/pages/whyus" element={<WhyUs />} />
+          <Route path="/pages/detailedreviews" element={<DetailedReviews />} />
+          <Route path="/pages/booksurvey" element={<BookSurvey />} />
           <Route path="/pages/leadership" element={<Leadership />} />
-        <Route path="/pages/products/:slug" element={<ProductDetail />} />
-      </Routes>
+          <Route path="/pages/products/category/:categorySlug" element={<CategoryPage />} />
+          <Route path="/pages/products/:slug" element={<ProductDetail />} />
+        </Routes>
+      </PageTransition>
       <Footer />
       <FloatingWhatsApp />
     </BrowserRouter>

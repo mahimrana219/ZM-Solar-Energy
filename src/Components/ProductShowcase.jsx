@@ -7,6 +7,13 @@ import { getProductsByCategory } from '../data/products';
 
 const CATEGORIES = ['Batteries', 'On Grid Solar Inverters', 'Solar Panels'];
 
+const CATEGORY_SLUGS = {
+  'Hybrid Solar Inverters': 'hybrid',
+  Batteries: 'batteries',
+  'On Grid Solar Inverters': 'ongrid',
+  'Solar Panels': 'panels',
+};
+
 function ProductCard({ product, index }) {
   return (
     <Reveal direction="up" delay={index * 80} className="h-full">
@@ -50,7 +57,7 @@ function ProductCategoryRow({ title }) {
 
       <Reveal direction="up" className="flex justify-center">
         <Link
-          to="/pages/booksurvey"
+          to={`/pages/products/category/${CATEGORY_SLUGS[title]}`}
           className="inline-flex items-center gap-2 bg-solarRed hover:bg-red-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-solarRed/20 transition-all text-sm"
         >
           View All {title}

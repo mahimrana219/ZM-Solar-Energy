@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconMail, IconBrandWhatsapp, IconMapPin, IconPhone } from '@tabler/icons-react';
+import { IconMail, IconBrandWhatsapp, IconMapPin, IconPhone, IconBrandFacebook, IconBrandInstagram, IconBrandTiktok } from '@tabler/icons-react';
 import logoIcon from '../assets/LogoIcon.png';
 
 export default function Footer() {
@@ -31,7 +31,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="https://wa.me/923000000000"
+                href="https://wa.me/message/OUKLMJYTMAZUM1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-white/15 text-white hover:bg-white hover:text-solarRed flex items-center justify-center shadow-lg transition-all"
@@ -43,6 +43,30 @@ export default function Footer() {
                 className="w-10 h-10 rounded-xl bg-white/15 text-white hover:bg-white hover:text-solarRed flex items-center justify-center shadow-lg transition-all"
               >
                 <IconMail className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61595275815626"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-xl bg-white/15 text-white hover:bg-white hover:text-solarRed flex items-center justify-center shadow-lg transition-all"
+              >
+                <IconBrandFacebook className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.instagram.com/zmsolarenergyofficial/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-xl bg-white/15 text-white hover:bg-white hover:text-solarRed flex items-center justify-center shadow-lg transition-all"
+              >
+                <IconBrandInstagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@zmsolarenergy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-xl bg-white/15 text-white hover:bg-white hover:text-solarRed flex items-center justify-center shadow-lg transition-all"
+              >
+                <IconBrandTiktok className="w-5 h-5" />
               </a>
             </div>
           </div>

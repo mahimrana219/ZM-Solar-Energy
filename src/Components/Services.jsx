@@ -1,5 +1,6 @@
 import React from 'react';
-import { 
+import { Link } from 'react-router-dom';
+import {
   IconHome, 
   IconBuildingSkyscraper, 
   IconBolt, 
@@ -99,13 +100,13 @@ export default function Services() {
                 </p>
               </div>
 
-              <a
-                href="#contact"
+              <Link
+                to="/pages/booksurvey"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900 group-hover:text-solarRed transition-colors pt-4 border-t border-slate-100"
               >
                 <span>Book This Service</span>
                 <IconArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </Reveal>
           ))}
         </div>

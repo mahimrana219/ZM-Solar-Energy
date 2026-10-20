@@ -96,15 +96,15 @@ export default function ContactUs() {
                   <div className="w-12 h-12 rounded-xl bg-solarRed/10 text-solarRed flex items-center justify-center group-hover:bg-solarRed group-hover:text-white transition-colors">
                     <IconMail className="w-6 h-6" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Email Us</span>
-                    <p className="text-sm font-bold text-slate-800 group-hover:text-solarRed transition-colors">zmsolarenergy786@gmail.com</p>
+                    <p className="text-sm font-bold text-slate-800 group-hover:text-solarRed transition-colors break-words">zmsolarenergy786@gmail.com</p>
                   </div>
                 </a>
 
                 {/* WhatsApp */}
                 <a 
-                  href="https://wa.me/923000000000" 
+                  href="https://wa.me/message/OUKLMJYTMAZUM1"
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/60 hover:border-green-500/40 transition-all group"

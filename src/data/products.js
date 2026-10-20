@@ -2,12 +2,123 @@ import energyWallR5 from '../assets/products/batteries/energy-wall-r5.png';
 import energyWallW5 from '../assets/products/batteries/energy-wall-w5.png';
 import energyWallT10 from '../assets/products/batteries/energy-wall-t10.png';
 import energyWallT11 from '../assets/products/batteries/energy-wall-t11.png';
+import energyWallS5 from '../assets/Energy-Wall-S5.png';
 import fusion12kw from '../assets/products/ongrid/fusion-12kw.jpeg';
 import fusion50kw from '../assets/products/ongrid/fusion-50kw.jpeg';
 import fusion125kw from '../assets/products/ongrid/fusion-125kw.jpeg';
 import solarPanel from '../assets/products/panels/solar-panel.png';
+import hyvion6_6kw from '../assets/products/hybrid/hyvion-6.6kw.png';
+import hyvion8_6kw from '../assets/products/hybrid/hyvion-8.6kw.png';
+import hyvion10_2kw from '../assets/products/hybrid/hyvion-10.2kw.png';
+import hyvion15kw from '../assets/products/hybrid/hyvion-15kw.png';
+import hyvion20kw from '../assets/products/hybrid/hyvion-20kw.png';
+import hyvion60kw from '../assets/products/hybrid/hyvion-60kw.jpeg';
+
+export const CATEGORIES = ['Hybrid Solar Inverters', 'Batteries', 'On Grid Solar Inverters', 'Solar Panels'];
 
 export const PRODUCTS = [
+  // ===== Hybrid Solar Inverters =====
+  {
+    slug: 'hyvion-6-6kw',
+    category: 'Hybrid Solar Inverters',
+    name: 'HYVION-6.6KW-SPLV',
+    price: 'PKR 245,000',
+    img: hyvion6_6kw,
+    tagline: 'Compact hybrid inverter for everyday residential energy management.',
+    description:
+      'The HYVION-6.6KW-SPLV is a single-phase hybrid solar inverter built for efficient energy management in homes. It delivers up to 99% output efficiency with smart hybrid technology that manages solar, battery, and grid power together, keeping you backed up during load shedding.',
+    specs: [
+      { label: 'Rated Power', value: '6.6 kW' },
+      { label: 'Type', value: 'Hybrid, Single-Phase' },
+      { label: 'MPPT Current', value: '20A' },
+      { label: 'Output Efficiency', value: 'Up to 99%' },
+      { label: 'Protection', value: 'Built-in AC/DC Surge Protection' },
+    ],
+  },
+  {
+    slug: 'hyvion-8-6kw',
+    category: 'Hybrid Solar Inverters',
+    name: 'HYVION-8.6KW-SPLV',
+    price: 'PKR 310,000',
+    img: hyvion8_6kw,
+    tagline: 'Higher-capacity hybrid inverter for larger homes and small businesses.',
+    description:
+      'The HYVION-8.6KW-SPLV steps up capacity for larger households and small commercial setups, pairing smart hybrid power management with dependable battery backup and built-in surge protection for Pakistan’s grid conditions.',
+    specs: [
+      { label: 'Rated Power', value: '8.6 kW' },
+      { label: 'Type', value: 'Hybrid, Single-Phase' },
+      { label: 'MPPT Current', value: '20A' },
+      { label: 'Output Efficiency', value: 'Up to 99%' },
+      { label: 'Protection', value: 'Built-in AC/DC Surge Protection' },
+    ],
+  },
+  {
+    slug: 'hyvion-10-2kw',
+    category: 'Hybrid Solar Inverters',
+    name: 'HYVION-10.2KW-SPLV',
+    price: 'PKR 400,000',
+    img: hyvion10_2kw,
+    tagline: 'High-output single-phase hybrid inverter for heavy residential loads.',
+    description:
+      'Designed for homes with heavier electrical loads, the HYVION-10.2KW-SPLV offers the same smart hybrid technology and backup reliability as the rest of the HYVION series, scaled up for higher continuous output.',
+    specs: [
+      { label: 'Rated Power', value: '10.2 kW' },
+      { label: 'Type', value: 'Hybrid, Single-Phase' },
+      { label: 'Output Efficiency', value: 'Up to 99%' },
+      { label: 'Protection', value: 'Built-in AC/DC Surge Protection' },
+    ],
+  },
+  {
+    slug: 'hyvion-15kw',
+    category: 'Hybrid Solar Inverters',
+    name: 'HYVION-15KW-3PLV',
+    price: 'PKR 625,000',
+    img: hyvion15kw,
+    tagline: 'Three-phase hybrid inverter for commercial and larger residential systems.',
+    description:
+      'The HYVION-15KW-3PLV brings three-phase hybrid power to commercial properties and large homes, balancing solar, battery, and grid power intelligently while protecting connected equipment with integrated surge protection.',
+    specs: [
+      { label: 'Rated Power', value: '15 kW' },
+      { label: 'Type', value: 'Hybrid, 3-Phase' },
+      { label: 'Output Efficiency', value: 'Up to 99%' },
+      { label: 'Protection', value: 'Built-in AC/DC Surge Protection' },
+    ],
+  },
+  {
+    slug: 'hyvion-20kw',
+    category: 'Hybrid Solar Inverters',
+    name: 'HYVION-20KW-3PLV',
+    price: 'PKR 750,000',
+    img: hyvion20kw,
+    tagline: 'High-capacity three-phase hybrid inverter for commercial installations.',
+    description:
+      'Built for demanding commercial installations, the HYVION-20KW-3PLV delivers robust three-phase hybrid performance with smart energy management, battery-ready architecture, and dependable backup during outages.',
+    specs: [
+      { label: 'Rated Power', value: '20 kW' },
+      { label: 'Type', value: 'Hybrid, 3-Phase' },
+      { label: 'Output Efficiency', value: 'Up to 99%' },
+      { label: 'Protection', value: 'Built-in AC/DC Surge Protection' },
+    ],
+  },
+  {
+    slug: 'hyvion-60kw',
+    category: 'Hybrid Solar Inverters',
+    name: 'HYVION-60KW-3PHV',
+    price: 'PKR 1,565,000',
+    img: hyvion60kw,
+    tagline: 'Industrial-grade, high-voltage hybrid inverter for large commercial sites.',
+    description:
+      'The HYVION-60KW-3PHV is engineered for factories, warehouses, and large commercial buildings that need high-voltage performance and reliability. It supports multiple MPPT inputs, integrated surge protection, remote monitoring, and rugged housing built for continuous peak loads.',
+    specs: [
+      { label: 'Rated Power', value: '60 kW' },
+      { label: 'Type', value: 'Hybrid, 3-Phase, High-Voltage' },
+      { label: 'Peak Efficiency', value: 'Over 98%' },
+      { label: 'Protection', value: 'Type II DC & AC Surge Protection' },
+      { label: 'Application', value: 'Commercial / Industrial' },
+    ],
+  },
+
+  // ===== Batteries =====
   {
     slug: 'energy-wall-r5',
     category: 'Batteries',
@@ -57,9 +168,9 @@ export const PRODUCTS = [
     ],
   },
   {
-    slug: 'energy-wall-s5',
+    slug: 'energy-wall-t11',
     category: 'Batteries',
-    name: 'Energy Wall T11 (S-Series) Battery 51.2V-314AH',
+    name: 'Energy Wall T11 Battery 51.2V-314AH',
     img: energyWallT11,
     tagline: 'Efficient energy storage built for consistent daily performance.',
     description:
@@ -72,6 +183,23 @@ export const PRODUCTS = [
       { label: 'Protection', value: 'Intelligent BMS' },
     ],
   },
+  {
+    slug: 'energy-wall-s5',
+    category: 'Batteries',
+    name: 'Energy Wall S5 Modular Battery System',
+    img: energyWallS5,
+    tagline: 'Stackable modular battery system for scalable energy storage.',
+    description:
+      'The Energy Wall S5 is a modular, rack-stackable lithium battery system that lets you scale storage capacity in steps by adding more modules to the stack. It is built for installations that may need to grow their backup power over time, from homes to small commercial sites.',
+    specs: [
+      { label: 'Voltage', value: '51.2V' },
+      { label: 'Battery Type', value: 'Lithium-Ion (LiFePO4)' },
+      { label: 'Design', value: 'Modular, Stackable Rack' },
+      { label: 'Protection', value: 'Intelligent BMS' },
+    ],
+  },
+
+  // ===== On Grid Solar Inverters =====
   {
     slug: 'fusion-ip66-12-15-20kw',
     category: 'On Grid Solar Inverters',
@@ -117,6 +245,8 @@ export const PRODUCTS = [
       { label: 'Application', value: 'Commercial / Industrial' },
     ],
   },
+
+  // ===== Solar Panels =====
   {
     slug: 'solar-panel',
     category: 'Solar Panels',
