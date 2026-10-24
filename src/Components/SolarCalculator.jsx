@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IconCalculator, IconArrowRight } from '@tabler/icons-react';
 import Reveal from './Reveal';
-import calcImage from '../assets/hero1.jpeg';
+import calcImage from '../assets/optimized/about-showcase.webp';
 
 // Rule-of-thumb sizing: every ~5,000 PKR of monthly bill needs roughly 1kW of solar.
 const PKR_PER_KW = 5000;

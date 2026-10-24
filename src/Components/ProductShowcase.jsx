@@ -22,6 +22,7 @@ function ProductCard({ product, index }) {
           <img
             src={product.img}
             alt={product.name}
+            loading="lazy"
             className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500"
           />
         </div>

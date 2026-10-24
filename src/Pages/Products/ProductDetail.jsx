@@ -143,7 +143,7 @@ export default function ProductDetail() {
                   className="bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-sm hover:border-solarRed/40 hover:shadow-xl transition-all group"
                 >
                   <div className="h-48 bg-slate-50 flex items-center justify-center p-4">
-                    <img src={item.img} alt={item.name} className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500" />
+                    <img src={item.img} alt={item.name} loading="lazy" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="p-5">
                     {item.price && (

@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { IconShieldCheck, IconUsers, IconBolt, IconCheck, IconArrowRight, IconAward, IconSunHigh } from '@tabler/icons-react';
 
 // Importing local images from assets folder
-import about1 from '../assets/ABOUT.jpeg';
-import about2 from '../assets/about2.jpeg';
-import about3 from '../assets/about3.jpeg';
-import about4 from '../assets/about4.jpeg';
-import about5 from '../assets/about5.jpeg';
+import about1 from '../assets/optimized/about-hero.webp';
+import about2 from '../assets/optimized/about2.webp';
+import about3 from '../assets/optimized/about3.webp';
+import about4 from '../assets/optimized/about4.webp';
+import about5 from '../assets/optimized/about5.webp';
 
 export default function About() {
   const stats = [
@@ -173,13 +174,13 @@ export default function About() {
           </div>
 
           <div className="relative z-10 flex-shrink-0">
-            <a 
-              href="/pages/booksurvey"
+            <Link
+              to="/pages/booksurvey"
               className="bg-solarRed hover:bg-solarRedDark text-white font-bold py-4 px-8 rounded-xl shadow-lg shadow-solarRed/30 transition-all inline-flex items-center gap-2 group"
             >
               <span>Get Free Proposal</span>
               <IconArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

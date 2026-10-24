@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { IconMail, IconBrandWhatsapp, IconMapPin, IconPhone, IconBrandFacebook, IconBrandInstagram, IconBrandTiktok } from '@tabler/icons-react';
-import logoIcon from '../assets/LogoIcon.png';
+import logoIcon from '../assets/optimized/logo-icon.webp';
 
 export default function Footer() {
   return (
@@ -76,24 +77,29 @@ export default function Footer() {
             <h4 className="text-white font-bold text-base tracking-wide">Quick Links</h4>
             <ul className="space-y-3 text-sm text-white font-bold">
               <li>
-                <a href="/pages/about" className="hover:text-solarRed transition-colors flex items-center gap-2.5">
+                <Link to="/pages/about" className="hover:text-solarRed transition-colors flex items-center gap-2.5">
                   <span className="w-2 h-2 rounded-full bg-solarRed"></span> About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/pages/services" className="hover:text-solarRed transition-colors flex items-center gap-2.5">
+                <Link to="/pages/services" className="hover:text-solarRed transition-colors flex items-center gap-2.5">
                   <span className="w-2 h-2 rounded-full bg-solarRed"></span> Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/pages/whyus" className="hover:text-solarRed transition-colors flex items-center gap-2.5">
+                <Link to="/pages/whyus" className="hover:text-solarRed transition-colors flex items-center gap-2.5">
                   <span className="w-2 h-2 rounded-full bg-solarRed"></span> How It Works
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/pages/contact" className="hover:text-solarRed transition-colors flex items-center gap-2.5">
+                <Link to="/pages/leadership" className="hover:text-solarRed transition-colors flex items-center gap-2.5">
+                  <span className="w-2 h-2 rounded-full bg-solarRed"></span> Founder / CEO
+                </Link>
+              </li>
+              <li>
+                <Link to="/pages/contact" className="hover:text-solarRed transition-colors flex items-center gap-2.5">
                   <span className="w-2 h-2 rounded-full bg-solarRed"></span> Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

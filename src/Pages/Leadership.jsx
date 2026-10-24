@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconShieldCheck, IconAward, IconCheck } from '@tabler/icons-react';
-import ceo from '../assets/CEO.png'
+import ceo from '../assets/optimized/ceo.webp'
 
 
 export default function Leadership() {

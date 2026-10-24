@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { IconChevronDown } from '@tabler/icons-react';
-import logo from '../assets/newlogo.png';
+import logo from '../assets/optimized/newlogo.webp';
 
 const PRODUCT_CATEGORIES = [
   { label: 'Hybrid Solar Inverters', slug: 'hybrid' },

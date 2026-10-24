@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import { IconMapPin, IconArrowRight } from '@tabler/icons-react';
 import Reveal from './Reveal';
 
-import pro1 from '../assets/pro1.jpeg';
-import pro3 from '../assets/pro3.jpeg';
-import pro8 from '../assets/pro8.jpeg';
-import pro16 from '../assets/pro16.jpeg';
-import pro17 from '../assets/pro17.jpeg';
-import pro24 from '../assets/pro24.jpeg';
+import pro1 from '../assets/optimized/pro1.webp';
+import pro3 from '../assets/optimized/pro3.webp';
+import pro8 from '../assets/optimized/pro8.webp';
+import pro16 from '../assets/optimized/pro16.webp';
+import pro17 from '../assets/optimized/pro17.webp';
+import pro24 from '../assets/optimized/pro24.webp';
 
 const FEATURED_PROJECTS = [
   { id: 1, title: '8kW Residential Hybrid Solar System', location: 'Hyderabad', capacity: '8 kW', img: pro1 },

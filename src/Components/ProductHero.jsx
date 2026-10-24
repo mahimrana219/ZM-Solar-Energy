@@ -4,9 +4,9 @@ import { IconCheck, IconArrowRight } from '@tabler/icons-react';
 import Reveal from './Reveal';
 
 import solarImg from '../assets/solarpannerl.webp';
-import hybridImg from '../assets/ZM Solar Energy at Sunset.png';
-import onGridImg from '../assets/ZM Energy Units at Sunset.png';
-import batteryImg from '../assets/ZM Solar Energy Systems at Sunset.png';
+import hybridImg from '../assets/optimized/zm-hybrid-sunset.webp';
+import onGridImg from '../assets/optimized/zm-ongrid-sunset.webp';
+import batteryImg from '../assets/optimized/zm-battery-sunset.webp';
 import hybridVideo from '../assets/HYBRID-INVERTERS.mp4';
 import batteryVideo from '../assets/lithium-ion-battery.mp4';
 

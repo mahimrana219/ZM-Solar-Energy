@@ -1,5 +1,6 @@
 import React from 'react';
-import { 
+import { Link } from 'react-router-dom';
+import {
   IconSunHigh, 
   IconBatteryCharging, 
   IconTools, 
@@ -136,13 +137,13 @@ export default function ServicesPage() {
                 </div>
               ))}
               <div className="pt-3">
-                <a 
-                  href="/pages/contact" 
+                <Link
+                  to="/pages/booksurvey"
                   className="w-full bg-slate-900 hover:bg-solarRed text-white text-xs font-bold uppercase tracking-wider py-3 px-4 rounded-xl transition-colors flex items-center justify-center gap-2 group"
                 >
                   <span>Book This Service</span>
                   <IconArrowRight className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -164,13 +165,13 @@ export default function ServicesPage() {
           </div>
 
           <div className="relative z-10 flex-shrink-0">
-            <a 
-              href="/pages/booksurvey"
+            <Link
+              to="/pages/booksurvey"
               className="bg-solarRed hover:bg-solarRedDark text-white font-bold py-4 px-8 rounded-xl shadow-lg shadow-solarRed/30 transition-all inline-flex items-center gap-2 group"
             >
               <span>Schedule Free Survey</span>
               <IconArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

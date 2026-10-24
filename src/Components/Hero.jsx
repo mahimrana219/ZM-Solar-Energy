@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IconArrowRight, IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
-import hero1 from '../assets/hero1.png';
-import hero2 from '../assets/hero2 (2).png';
-import hero3 from '../assets/hero3.png';
+import hero1 from '../assets/optimized/hero1.webp';
+import hero2 from '../assets/optimized/hero2.webp';
+import hero3 from '../assets/optimized/hero3.webp';
 
 const SLIDES = [
   {
@@ -60,6 +60,8 @@ export default function Hero() {
           key={i}
           src={s.image}
           alt={s.label}
+          loading={i === 0 ? 'eager' : 'lazy'}
+          fetchPriority={i === 0 ? 'high' : 'auto'}
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
             i === index ? 'opacity-100' : 'opacity-0'
           }`}

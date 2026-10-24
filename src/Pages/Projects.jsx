@@ -2,31 +2,31 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IconMapPin, IconArrowRight, IconX } from '@tabler/icons-react';
 
-// Importing pro1.jpeg to pro24.jpeg from assets folder using ES modules
-import pro1 from '../assets/pro1.jpeg';
-import pro2 from '../assets/pro2.jpeg';
-import pro3 from '../assets/pro3.jpeg';
-import pro4 from '../assets/pro4.jpeg';
-import pro5 from '../assets/pro5.jpeg';
-import pro6 from '../assets/pro6.jpeg';
-import pro7 from '../assets/pro7.jpeg';
-import pro8 from '../assets/pro8.jpeg';
-import pro9 from '../assets/pro9.jpeg';
-import pro10 from '../assets/pro10.jpeg';
-import pro11 from '../assets/pro11.jpeg';
-import pro12 from '../assets/pro12.jpeg';
-import pro13 from '../assets/pro13.jpeg';
-import pro14 from '../assets/pro14.jpeg';
-import pro15 from '../assets/pro15.jpeg';
-import pro16 from '../assets/pro16.jpeg';
-import pro17 from '../assets/pro17.jpeg';
-import pro18 from '../assets/pro18.jpeg';
-import pro19 from '../assets/pro19.jpeg';
-import pro20 from '../assets/pro20.jpeg';
-import pro21 from '../assets/pro21.jpeg';
-import pro22 from '../assets/pro22.jpeg';
-import pro23 from '../assets/pro23.jpeg';
-import pro24 from '../assets/pro24.jpeg';
+// Importing pro1.webp to pro24.webp (optimized) from assets folder using ES modules
+import pro1 from '../assets/optimized/pro1.webp';
+import pro2 from '../assets/optimized/pro2.webp';
+import pro3 from '../assets/optimized/pro3.webp';
+import pro4 from '../assets/optimized/pro4.webp';
+import pro5 from '../assets/optimized/pro5.webp';
+import pro6 from '../assets/optimized/pro6.webp';
+import pro7 from '../assets/optimized/pro7.webp';
+import pro8 from '../assets/optimized/pro8.webp';
+import pro9 from '../assets/optimized/pro9.webp';
+import pro10 from '../assets/optimized/pro10.webp';
+import pro11 from '../assets/optimized/pro11.webp';
+import pro12 from '../assets/optimized/pro12.webp';
+import pro13 from '../assets/optimized/pro13.webp';
+import pro14 from '../assets/optimized/pro14.webp';
+import pro15 from '../assets/optimized/pro15.webp';
+import pro16 from '../assets/optimized/pro16.webp';
+import pro17 from '../assets/optimized/pro17.webp';
+import pro18 from '../assets/optimized/pro18.webp';
+import pro19 from '../assets/optimized/pro19.webp';
+import pro20 from '../assets/optimized/pro20.webp';
+import pro21 from '../assets/optimized/pro21.webp';
+import pro22 from '../assets/optimized/pro22.webp';
+import pro23 from '../assets/optimized/pro23.webp';
+import pro24 from '../assets/optimized/pro24.webp';
 
 const projectImages = {
   1: pro1, 2: pro2, 3: pro3, 4: pro4, 5: pro5, 
@@ -108,9 +108,10 @@ export default function Projects() {
           >
             {/* Image Container */}
             <div className="relative h-64 overflow-hidden bg-slate-200">
-              <img 
-                src={project.img} 
-                alt={project.title} 
+              <img
+                src={project.img}
+                alt={project.title}
+                loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
