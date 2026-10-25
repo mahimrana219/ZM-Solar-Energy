@@ -114,11 +114,11 @@ export default function Footer() {
                 </div>
                 <span>Hyderabad, Sindh, Pakistan ( All Over Pakistan Service)</span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-3 min-w-0">
                 <div className="w-8 h-8 rounded-lg bg-white/15 text-white flex items-center justify-center flex-shrink-0 shadow-md">
                   <IconMail className="w-4 h-4" />
                 </div>
-                <a href="mailto:zmsolarenergy786@gmail.com" className="hover:text-white transition-colors">zmsolarenergy786@gmail.com</a>
+                <a href="mailto:zmsolarenergy786@gmail.com" className="hover:text-white transition-colors break-words min-w-0">zmsolarenergy786@gmail.com</a>
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-white/15 text-white flex items-center justify-center flex-shrink-0 shadow-md">

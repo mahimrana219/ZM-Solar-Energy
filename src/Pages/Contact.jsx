@@ -118,9 +118,9 @@ export default function Contact() {
                 <div className="w-12 h-12 rounded-xl bg-green-500 text-white flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
                   <IconBrandWhatsapp className="w-6 h-6" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">WhatsApp Instant Chat</span>
-                  <p className="text-sm font-bold text-slate-900 group-hover:text-green-600 transition-colors">+92 333 2664144</p>
+                  <p className="text-sm font-bold text-slate-900 group-hover:text-green-600 transition-colors break-words">+92 333 2664144</p>
                 </div>
               </a>
 
@@ -132,9 +132,9 @@ export default function Contact() {
                 <div className="w-12 h-12 rounded-xl bg-solarRed text-white flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
                   <IconMail className="w-6 h-6" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Official Email</span>
-                  <p className="text-sm font-bold text-slate-900 group-hover:text-solarRed transition-colors">zmsolarenergy786@gmail.com</p>
+                  <p className="text-sm font-bold text-slate-900 group-hover:text-solarRed transition-colors break-words">zmsolarenergy786@gmail.com</p>
                 </div>
               </a>
 
@@ -143,9 +143,9 @@ export default function Contact() {
                 <div className="w-12 h-12 rounded-xl bg-solarRed text-white flex items-center justify-center flex-shrink-0">
                   <IconPhone className="w-6 h-6" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Helpline</span>
-                  <p className="text-sm font-bold text-slate-900">+92 333 2664144</p>
+                  <p className="text-sm font-bold text-slate-900 break-words">+92 333 2664144</p>
                 </div>
               </div>
             </div>
